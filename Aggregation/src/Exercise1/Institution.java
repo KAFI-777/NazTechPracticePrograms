@@ -8,26 +8,27 @@ public class Institution {
 	int size=0;
 	private Department d[]= new Department[0];
 	
-	void insertValue(int a, String b) {
+	public boolean insertValue(int a, String b) {
 		
 		institutionId = a;
 		institutionName=b;
+		return true;
 	}
-	void add(Department a) {
+	
+	public boolean add(Department a) {
 		
 		if(size>=d.length-1) {
 			Department temp[]=d.clone();
 			d = new Department[d.length+1];
 			System.arraycopy(temp, 0, d, 0, temp.length);
-			//d[size]=a;
-			//size++;
 			
 		}
 		d[size]=a;
 		size++;
-		
+		return true;
 	}
-	void print() {
+	
+	public void print() {
 		
 		System.out.println("Institution Name: "+institutionName);
 		System.out.println("Institution ID: "+institutionId);
@@ -41,12 +42,13 @@ public class Institution {
 		
 	}
 	
-	void nsearch(int a) {
+	public Student nsearch(int a) {
 		
 		for(int i=0; i<size;i++) {
 			
-			d[i].search(a);
+			return d[i].search(a);
 		}
+		return null;
 	}
 	
 

@@ -5,9 +5,10 @@ public class Student {
 	int id;
 	String name;
 	
-	void insertValue(int a, String b) {
+	public boolean insertValue(int a, String b) {
 		id = a;
 		name = b;
+		return true;
 	}
 
    void print() {

@@ -10,31 +10,29 @@ public class Department {
 	
 	private Student s[]= new Student[0];
 	
-	void insertValue(int a,String b ) {
+	public boolean insertValue(int a,String b ) {
 		
 		deptId = a;
 		deptName=b;
-	
+		return true;
 		
 	}
 	
-	void add(Student a) {
+	public boolean add(Student a) {
 		
 		if(size>=s.length-1) {
 			Student temp[]=s.clone();
 			s = new Student[s.length+1];
 			System.arraycopy(temp, 0, s, 0, temp.length);
-			//s[size]=a;
-			//size++;
-			//System.out.println("YOYO");
 			
 		}
 		s[size]=a;
 		size++;
+		return true;
 		
 	}
 	
-	void print() {
+	public void print() {
 		
 		System.out.println("Department Name: "+deptName);
         System.out.println("Department Id: "+deptId);
@@ -43,24 +41,19 @@ public class Department {
 			
 			s[i].print();
 		}
-		
-		
-		
+			
 	}
 	
-	void search(int a) {
+	public Student search(int a) {
 		
 		for (int i=0;i<size;i++) {
 			
 			if(s[i].id==a) {
 				
-				s[i].print();
-				break;
-			}
-			
-			
-			
+				return s[i];	
+			}	
 		}
+		return null;
 		
 	}
 
