@@ -13,9 +13,6 @@ public class SimpleArray {
 		
 		char abc=a.charAt(0);
 		System.out.println(abc);
-		
-		
-
 	}
 
 }
