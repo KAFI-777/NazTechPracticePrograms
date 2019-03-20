@@ -14,17 +14,13 @@ public class EnumTestTest {
 
 	@Test
 	public void test() {
-		//fail("Not yet implemented");
 		
 		EnumTest m1 = new EnumTest(Month.JANUARY);
 		
 		 input= new Scanner(System.in);
 		String ss;
 		ss=input.nextLine();
-		//String n=m1.getMonth();
-		
-		Assert.assertEquals ( m1.getMonth(),ss);
-		//Assert.assertTrue(n==ss);
+		Assert.assertEquals (ss, m1.getMonth());
 	}
 
 }

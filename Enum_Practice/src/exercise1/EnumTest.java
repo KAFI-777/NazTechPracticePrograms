@@ -80,40 +80,5 @@ public class EnumTest {
 		return null;
 		
 	}
-	
-	
-	
-
-//	public static void main(String[] args) {
-//		
-//	
-//		EnumTest m1 = new EnumTest(Month.JANUARY);
-//		EnumTest m2 = new EnumTest(Month.FEBRUARY);
-//		EnumTest m3 = new EnumTest(Month.MARCH);
-//		EnumTest m4 = new EnumTest(Month.APRIL);
-//		EnumTest m5 = new EnumTest(Month.MAY);
-//		EnumTest m6 = new EnumTest(Month.JUNE);
-//		EnumTest m7 = new EnumTest(Month.JULY);
-//		EnumTest m8 = new EnumTest(Month.AUGUST);
-//		EnumTest m9 = new EnumTest(Month.SEPTEMBER);
-//		EnumTest m10 = new EnumTest(Month.OCTOBER);
-//		EnumTest m11 = new EnumTest(Month.NOVEMBER);
-//		EnumTest m12 = new EnumTest(Month.DECEMBER);
-//		
-//		m1.getMonth();
-//		
-//		Month m[]=Month.values();
-//		
-//		Month mm=Month.MAY;
-//		System.out.println(mm);
-//		for(Month a:m) {
-//			System.out.println(a.name());
-//		}
-		
-		
-		
-
-
-//	}
 
 }
