@@ -1,5 +1,6 @@
 import java.sql.Time;
 import java.text.SimpleDateFormat;
+import java.time.LocalDate;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Date;
@@ -13,23 +14,23 @@ public class MAIN {
 		//System.out.println(z);
 		int a=0;
 		
-//		LocalDate obj=LocalDate.now();
-//		System.out.println(obj);
+		LocalDate obj=LocalDate.now();
+		System.out.println(obj);
 		
-//		Date date =new Date();
-//		//System.out.println(date);
-//		SimpleDateFormat ft = new SimpleDateFormat("dd-mm-yyyy");
-//		System.out.println(ft.format(date));
-//		
-//		SimpleDateFormat ft1 = new SimpleDateFormat("hh:mm:ss");
-//		System.out.println(ft1.format(date));
-//		 
-//		LocalTime time = LocalTime.now();
-//		System.out.println(time);
-//		
-//		DateTimeFormatter tf =  DateTimeFormatter.ofPattern("hh:mm:ss"); 
-//		System.out.println(tf.format(time));		
-//		
+		Date date =new Date();
+		//System.out.println(date);
+		SimpleDateFormat ft = new SimpleDateFormat("dd-mm-yyyy");
+		System.out.println(ft.format(date));
+		
+		SimpleDateFormat ft1 = new SimpleDateFormat("hh:mm:ss");
+		System.out.println(ft1.format(date));
+		 
+		LocalTime time = LocalTime.now();
+		System.out.println(time);
+		
+		DateTimeFormatter tf =  DateTimeFormatter.ofPattern("hh:mm:ss"); 
+		System.out.println(tf.format(time));		
+		
 		
 		String str1[]=Student.std;
 		System.out.println(str1[1].startsWith("K"));
